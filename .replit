@@ -1,0 +1,2 @@
+language = "cpp"
+run = "g++ -o wk1 wk1.cpp && ./wk1"
