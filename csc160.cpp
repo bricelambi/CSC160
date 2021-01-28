@@ -15,6 +15,10 @@ double WeatherReport::getTemperature() {
   return this->temperature;
 }
 
+string WeatherReport::getLocation() {
+  return this->location;
+}
+
 // vector<string> getNextLineAndSplitIntoTokens(istream& str)
 // {
 //     vector<string>   result;

@@ -55,14 +55,14 @@ int main() {
   // delete userIds;
 
 
-  map<int,string> mymap;
-  map<int,string>::iterator it = mymap.begin();
+  // map<int,string> mymap;
+  // map<int,string>::iterator it = mymap.begin();
 
 
-  mymap.insert(it, pair<int,string>(2,"hello"));
-  mymap.insert(it, pair<int,string>(43,"forty three"));
+  // mymap.insert(it, pair<int,string>(2,"hello"));
+  // mymap.insert(it, pair<int,string>(43,"forty three"));
 
-  cout << mymap.at(43) << endl;
+  // cout << mymap.at(43) << endl;
   
 
   /*
@@ -80,14 +80,14 @@ int main() {
   */
 
 
-  /*
+  
   string location;
-
 
   cout << "Please enter your airport:";
   cin >> location;
 
   WeatherReport report = WeatherReport(location);
-  cout << report.getTemperature() << endl;
-  */
+
+  cout << "temperature is " << report.getTemperature() << " at " << report.getLocation() << endl;
+
 }
