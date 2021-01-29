@@ -88,6 +88,13 @@ int main() {
 
   WeatherReport report = WeatherReport(location);
 
-  cout << "temperature is " << report.getTemperature() << " at " << report.getLocation() << endl;
+  bool isInLongmont = report.getTemperature() < 0 && report.getLocation() == "klmo"; 
+
+  cout << isInLongmont << endl;
+
+  if (isInLongmont) {
+    cout << "it's cold in longmont" << endl;
+  }
+  // cout << "temperature is " << report.getTemperature() << " at " << report.getLocation() << endl;
 
 }
