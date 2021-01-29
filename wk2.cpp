@@ -15,19 +15,19 @@ int main() {
   // cout << "enter number of elements: ";
   // cin >> numElements;
 
-/*
+
   const int NUM_ELEMENTS = 5;
 
   // int userIds[NUM_ELEMENTS];
-  int* userIds = new int[numElements];
+  // int* userIds = new int[numElements];
 
-  for (int i = 0; i < numElements; i++) {
-    userIds[i] = i;
-    cout << userIds[i] << endl;
-  }
+  // for (int i = 0; i < numElements; i++) {
+  //   userIds[i] = i;
+  //   cout << userIds[i] << endl;
+  // }
 
-  delete [] userIds;
-*/
+  // delete [] userIds;
+
 
   // vector<int> userIds;
   // userIds.push_back(42);
@@ -80,7 +80,6 @@ int main() {
   */
 
 
-  
   string location;
 
   cout << "Please enter your airport:";
@@ -88,13 +87,14 @@ int main() {
 
   WeatherReport report = WeatherReport(location);
 
-  bool isInLongmont = report.getTemperature() < 0 && report.getLocation() == "klmo"; 
+  bool isInLongmont = report.getTemperature() < 0 && report.getLocation() == "klmo";
 
   cout << isInLongmont << endl;
 
   if (isInLongmont) {
-    cout << "it's cold in longmont" << endl;
+    cout << "it is cold at longmont" << endl;
   }
+
   // cout << "temperature is " << report.getTemperature() << " at " << report.getLocation() << endl;
 
 }

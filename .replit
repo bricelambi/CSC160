@@ -1,2 +1,2 @@
 language = "cpp"
-run = "make && ./wk2"
+run = "make && ./hw2"

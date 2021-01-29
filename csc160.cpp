@@ -11,6 +11,10 @@ WeatherReport::WeatherReport(string location) {
 WeatherReport::~WeatherReport() {
 }
 
+void WeatherReport::setTemperature(double temperature) {
+  this->temperature = temperature;
+}
+
 double WeatherReport::getTemperature() {
   return this->temperature;
 }

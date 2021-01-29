@@ -16,6 +16,7 @@ class WeatherReport {
     ~WeatherReport();
     
     double getTemperature();
+    void setTemperature(double temperature);
     string getLocation();
 };
 
