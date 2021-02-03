@@ -8,6 +8,7 @@ class WeatherReport {
   private:
     string location;
     double temperature;
+    double windSpeed;
 
   public:
     const double FILL_VALUE = -9999;
@@ -17,6 +18,10 @@ class WeatherReport {
     
     double getTemperature();
     void setTemperature(double temperature);
+
+    double getWindSpeed();
+    void setWindSpeed(double windSpeed);
+    
     string getLocation();
 };
 
